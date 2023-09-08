@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 
-
+// check
 // const artists = [
 //   { id: 1, task: "Buy groceries", completed: false },
 //   { id: 2, task: "Finish homework", completed: false },
