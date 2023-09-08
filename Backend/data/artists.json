@@ -165,6 +165,17 @@
     "shortDescription": "Bob Dylan is an American singer-songwriter known for his poetic lyrics and influential contributions to folk and rock music."
   },
   {
+    "id": 20,
+    "name": "Lukas Lukas",
+    "birthdate": "1990-05-24",
+    "activeSince": "1990",
+    "genres": "Techno, Hardstyle",
+    "labels": "Danish Records",
+    "website": "https://www.lukas.com/",
+    "image": "http://www.lukas.com/image/lukas/7.jpg",
+    "shortDescription": "Lukas Mukas"
+  },
+  {
     "id": 16,
     "name": "Frank Sinatra",
     "birthdate": "1915-12-12",

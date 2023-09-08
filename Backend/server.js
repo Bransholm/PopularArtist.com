@@ -8,7 +8,6 @@ const port = 4000;
 app.use(express.json());
 app.use(cors());
 
-
 // check
 // const artists = [
 //   { id: 1, task: "Buy groceries", completed: false },
@@ -30,9 +29,9 @@ app.get("/artists", async (request, response) => {
 
 //GET artist object by id
 app.get("/artists/:id", async (request, response) => {
-    const data = await fs.readFile("data/artists.json");
-    const artists = JSON.parse(data);
-    console.log(request.params);
+  const data = await fs.readFile("data/artists.json");
+  const artists = JSON.parse(data);
+  console.log(request.params);
   const id = Number(request.params.id);
   const findArtists = artists.find((artist) => artist.id === id);
   console.log(findArtists);
@@ -64,14 +63,28 @@ app.post("/artists", async (request, response) => {
 });
 
 //PUT artists
-app.put("/artists/:id", (request, response) => {
+app.put("/artists/:id", async (request, response) => {
   console.log(request.params.id);
   const id = Number(request.params.id);
   console.log(id);
+
+  const data = await fs.readFile("data/artists.json");
+  const artists = await JSON.parse(data);
+
   const artist = request.body;
   const result = artists.find((artist) => artist.id === id);
-  result.task = artist.task;
-  result.completed = artist.completed;
+
+  result.name = artist.name;
+  result.birthdate = artist.birthdate;
+  result.activeSince = artist.activeSince;
+  result.genres = artist.genres;
+  result.labels = artist.labels;
+  result.website = artist.website;
+  result.image = artist.image;
+  result.shortDescription = artist.shortDescription;
+
+  fs.writeFile("data/artists.json", JSON.stringify(artists));
+
   console.log(request.body);
   response.json(artists);
 });
