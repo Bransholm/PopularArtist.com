@@ -77,13 +77,18 @@ app.put("/artists/:id", (request, response) => {
 });
 
 //DELETE artists
-app.delete("/artists/:id", (request, response) => {
+app.delete("/artists/:id", async (request, response) => {
   const id = Number(request.params.id);
   console.log(id);
+
+  const data = await fs.readFile("data/artists.json");
+  const artists = await JSON.parse(data);
+
   const removeArtist = artists.findIndex((artist) => artist.id === id);
   console.log(removeArtist);
   artists.splice(removeArtist, 1);
   console.log(artists);
+  fs.writeFile("data/artists.json", JSON.stringify(artists));
   response.json(artists);
 });
 

@@ -174,38 +174,5 @@
     "website": "https://www.sinatra.com/",
     "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Frank_Sinatra_%281968%29.jpg",
     "shortDescription": "Frank Sinatra, 'Ol' Blue Eyes,' was an American singer and actor known for his timeless classics and contributions to the music and film industry."
-  },
-  {
-    "id": 1694114997750,
-    "name": "TEST ARTIST",
-    "birthdate": "1989-12-13",
-    "activeSince": "2004",
-    "genres": "Country, Pop",
-    "labels": "Big Machine Records, Republic Records",
-    "website": "https://www.taylorswift.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Taylor_Swift_2019_by_Glenn_Francis.jpg",
-    "shortDescription": "Taylor Swift is an American singer-songwriter known for her narrative songwriting and successful transitions between country and pop music."
-  },
-  {
-    "id": 1694172865819,
-    "name": "Kenneth fredag kl. 13.34",
-    "birthdate": "1915-12-12",
-    "activeSince": "1935",
-    "genres": "Jazz, Swing, Pop",
-    "labels": "Columbia Records, Capitol Records, Reprise Records",
-    "website": "https://www.sinatra.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Frank_Sinatra_%281968%29.jpg",
-    "shortDescription": "Frank Sinatra, 'Ol' Blue Eyes,' was an American singer and actor known for his timeless classics and contributions to the music and film industry."
-  },
-  {
-    "id": 1694177326044,
-    "name": "Kenneth fredag kl. 14.46",
-    "birthdate": "1915-12-12",
-    "activeSince": "1935",
-    "genres": "Jazz, Swing, Pop",
-    "labels": "Columbia Records, Capitol Records, Reprise Records",
-    "website": "https://www.sinatra.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Frank_Sinatra_%281968%29.jpg",
-    "shortDescription": "Frank Sinatra, 'Ol' Blue Eyes,' was an American singer and actor known for his timeless classics and contributions to the music and film industry."
   }
 ]
