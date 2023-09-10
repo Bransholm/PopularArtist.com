@@ -7,7 +7,7 @@
     "genres": "Pop, R&B",
     "labels": "Jive Records, RCA Records",
     "website": "https://britneyspears.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Britney_Jean_Spears%2C_London_2016.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Britney Spears is an American singer, dancer, and actress who achieved worldwide fame as a pop icon in the late 1990s and early 2000s. She is known for her chart-topping hits, iconic music videos, and her impact on pop culture."
   },
   {
@@ -18,7 +18,7 @@
     "genres": "Pop, R&B, Rock",
     "labels": "Epic Records",
     "website": "https://www.michaeljackson.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Michael_Jackson_in_1988.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Michael Jackson, the 'King of Pop,' was an American singer, songwriter, and dancer. He is one of the most famous and influential entertainers in the world."
   },
   {
@@ -29,7 +29,7 @@
     "genres": "Pop, Dance, Electronica",
     "labels": "Sire Records",
     "website": "https://www.madonna.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Madonna_2016.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Madonna is an American singer, songwriter, and actress known for her reinventions in music and her immense impact on popular culture."
   },
   {
@@ -40,7 +40,7 @@
     "genres": "Pop, R&B",
     "labels": "Columbia Records, Parkwood Entertainment",
     "website": "https://www.beyonce.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Beyonce_2016.jpg/1920px-Beyonce_2016.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Beyoncé is an American singer, songwriter, and actress known for her powerful vocals and her impact on feminism and social issues through her music."
   },
   {
@@ -51,7 +51,7 @@
     "genres": "Pop, Soul",
     "labels": "XL Recordings, Columbia Records",
     "website": "https://www.adele.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Adele_2016.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Adele is a British singer-songwriter known for her emotional and soulful ballads. She has won numerous awards for her powerful vocals."
   },
   {
@@ -62,7 +62,7 @@
     "genres": "Country, Pop",
     "labels": "Big Machine Records, Republic Records",
     "website": "https://www.taylorswift.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Taylor_Swift_2019_by_Glenn_Francis.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Taylor Swift is an American singer-songwriter known for her narrative songwriting and successful transitions between country and pop music."
   },
   {
@@ -73,7 +73,7 @@
     "genres": "Pop, R&B",
     "labels": "RBMG, Def Jam Recordings",
     "website": "https://www.justinbiebermusic.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Justin_Bieber_2019_by_Glenn_Francis.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Justin Bieber is a Canadian singer-songwriter known for his early success as a teen pop sensation and his continued influence in the music industry."
   },
   {
@@ -84,7 +84,7 @@
     "genres": "Pop, Dance, Electronic",
     "labels": "Interscope Records",
     "website": "https://www.ladygaga.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/Lady_Gaga_at_The_Oscars_2019_by_Glenn_Francis.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Lady Gaga is an American singer, songwriter, and actress known for her distinctive style, theatrical performances, and chart-topping hits."
   },
   {
@@ -95,7 +95,7 @@
     "genres": "Hip-Hop, Rap",
     "labels": "Shady Records, Aftermath Entertainment, Interscope Records",
     "website": "https://www.eminem.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Eminem_-_Glasgow_2019_%28cropped%29.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Eminem is an American rapper, songwriter, and record producer known for his complex lyrics and his impact on the hip-hop genre."
   },
   {
@@ -106,7 +106,7 @@
     "genres": "Soul, R&B, Pop",
     "labels": "Motown, Tamla",
     "website": "https://www.steviewonder.net/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Stevie_Wonder_1973.JPG",
+    "image": "images/britney.jpg",
     "shortDescription": "Stevie Wonder is an American singer, songwriter, and multi-instrumentalist known for his timeless classics and contributions to music."
   },
   {
@@ -117,7 +117,7 @@
     "genres": "Rock, Pop, Experimental",
     "labels": "RCA Records, Columbia Records",
     "website": "https://www.davidbowie.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/David_Bowie_Hampstead_1976.jpg/1920px-David_Bowie_Hampstead_1976.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "David Bowie was an English singer, songwriter, and actor known for his innovative music and influential contributions to rock and pop culture."
   },
   {
@@ -128,7 +128,7 @@
     "genres": "Progressive Rock, Psychedelic Rock",
     "labels": "EMI, Harvest, Columbia",
     "website": "https://www.pinkfloyd.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/3/33/Pink_Floyd%2C_1973%2C_Almendres.JPG",
+    "image": "images/britney.jpg",
     "shortDescription": "Pink Floyd was a British rock band known for their concept albums and influential contributions to the progressive rock genre."
   },
   {
@@ -139,7 +139,7 @@
     "genres": "Hip-Hop, Rap",
     "labels": "Roc Nation, Def Jam Recordings",
     "website": "https://www.jay-z.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Jay-Z_-_Global_Citizen_Festival_Hamburg_6.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Jay-Z is an American rapper, songwriter, and entrepreneur known for his successful music career and business ventures."
   },
   {
@@ -150,7 +150,7 @@
     "genres": "Rock, Pop, R&B",
     "labels": "Parlophone, Capitol Records",
     "website": "https://www.tinaturnerofficial.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Tina_Turner_Memphis_1973_cropped.jpg/1920px-Tina_Turner_Memphis_1973_cropped.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Tina Turner is an American-born Swiss singer, actress, and dancer known for her powerful voice and iconic performances."
   },
   {
@@ -161,7 +161,7 @@
     "genres": "Folk, Rock",
     "labels": "Columbia Records",
     "website": "https://www.bobdylan.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Bob_Dylan_-_Azkena_Rock_Festival_2010_%28cropped%29.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Bob Dylan is an American singer-songwriter known for his poetic lyrics and influential contributions to folk and rock music."
   },
   {
@@ -172,7 +172,7 @@
     "genres": "Techno, Hardstyle",
     "labels": "Danish Records",
     "website": "https://www.lukas.com/",
-    "image": "http://www.lukas.com/image/lukas/7.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Lukas Mukas"
   },
   {
@@ -183,7 +183,7 @@
     "genres": "Jazz, Swing, Pop",
     "labels": "Columbia Records, Capitol Records, Reprise Records",
     "website": "https://www.sinatra.com/",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Frank_Sinatra_%281968%29.jpg",
+    "image": "images/britney.jpg",
     "shortDescription": "Frank Sinatra, 'Ol' Blue Eyes,' was an American singer and actor known for his timeless classics and contributions to the music and film industry."
   }
 ]

@@ -1,0 +1,46 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  color: aliceblue;
+  padding: 0px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 10px;
+}
+
+.grab-artists {
+  background-color: indigo;
+  letter-spacing: 1px;
+  font-weight: 1000;
+  color: yellow;
+  border-radius: 25px;
+  padding: 0px;
+}
+
+header {
+  background-color: indigo;
+  color: yellow;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 1000;
+  border-radius: 20px;
+}
+
+footer {
+  background-color: indigo;
+  color: yellow;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 1000;
+  border-radius: 20px;
+}
