@@ -12,6 +12,32 @@ p {
   padding: 0px;
 }
 
+button {
+  background-color: indigo;
+  color: yellow;
+  font-size: 16px;
+  text-align: center;
+  width: 100px;
+  padding: 4;
+  margin: 10px;
+  border-radius: 20px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+  color: indigo;
+  font-size: 16px;
+  text-align: center;
+  width: 100px;
+  padding: 4;
+  margin: 10px;
+  border-radius: 20px;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));

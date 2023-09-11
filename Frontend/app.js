@@ -20,9 +20,11 @@ async function fetchArtists() {
 }
 
 function showSelectedArtists(artists) {
+    document.querySelector("#display-artists").innerHTML = "";
     for (const artist of artists) {
         
-        const html = `
+        const html = /*html*/
+            `
             <article class="grab-artists" align="center">
             <h3>${artist.name}</h3>
             <img src="${artist.image}" alt ="${artist.name}">
@@ -32,9 +34,12 @@ function showSelectedArtists(artists) {
             <p>Labels: ${artist.labels}</p>
             <p>Website: ${artist.website}</p>
             <p>About: ${artist.shortDescription}</p>
+            <p class="artist-buttons">
+                <button class="button-update-user">Update</button>
+                <button class="button-delete-user">Delete</button>
+            </p>
             </article>
             `;
-        
         document.querySelector("#display-artists").insertAdjacentHTML("beforeend", html);
     }
 }
