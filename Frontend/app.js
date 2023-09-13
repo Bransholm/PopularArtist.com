@@ -33,7 +33,7 @@ function showSelectedArtists(artists) {
             <p>Active since: ${artist.activeSince}</p>
             <p>Genres: ${artist.genres}</p>
             <p>Labels: ${artist.labels}</p>
-            <p>Website: ${artist.website}</p>
+            <p>Website: <a href="${artist.website}" target="_blank">Visit website</a> </p>
             <p>About: ${artist.shortDescription}</p>
             <p class="artist-buttons">
                 <button class="button-update-artist">Update</button>
