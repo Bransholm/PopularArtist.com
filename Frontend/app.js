@@ -35,11 +35,31 @@ function showSelectedArtists(artists) {
             <p>Website: ${artist.website}</p>
             <p>About: ${artist.shortDescription}</p>
             <p class="artist-buttons">
-                <button class="button-update-user">Update</button>
-                <button class="button-delete-user">Delete</button>
+                <button class="button-update-artist">Update</button>
+                <button class="button-delete-artist">Delete</button>
             </p>
             </article>
             `;
         document.querySelector("#display-artists").insertAdjacentHTML("beforeend", html);
+
+        document.querySelector("#display-artists article:last-child .button-update-artist").addEventListener("click", () => updateArtist(artist));
+        document.querySelector("#display-artists article:last-child .button-delete-artist").addEventListener("click", () => deleteArtist(artist.id));
     }
+}
+
+function updateArtist() {
+
+}
+
+//Delete artist
+async function deleteArtist(id) {
+    const response = await fetch(`${endpoint}/artists/${id}`, {
+        method: "delete"
+    });
+    if (response.ok) {
+        getArtists();
+    }
+
+
+
 }
