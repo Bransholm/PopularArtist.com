@@ -17,7 +17,7 @@ button {
   color: yellow;
   font-size: 16px;
   text-align: center;
-  width: 100px;
+  width: 120px;
   padding: 4;
   margin: 10px;
   border-radius: 20px;
@@ -30,13 +30,27 @@ button:hover {
   color: indigo;
   font-size: 16px;
   text-align: center;
-  width: 100px;
+  width: 120px;
   padding: 4;
   margin: 10px;
   border-radius: 20px;
   border: 2px solid white;
   cursor: pointer;
 }
+
+form {
+    text-align: center;
+}
+
+input {
+    margin: 10px auto;
+    width: 100%;
+    max-width: 250px;
+    padding: 5px;
+    border: 2px solid yellow;
+    display: block;
+}
+
 
 .grid-layout {
   display: grid;
@@ -50,6 +64,20 @@ button:hover {
   font-weight: 1000;
   color: yellow;
   border-radius: 25px;
+  padding: 5px;
+}
+
+#grid-layout-forms {
+  background-color: indigo;
+  border-radius: 20px;
+  margin: 20px 0px 0px 0px;
+  padding: 0px 0px 10px 0px;
+}
+
+#grid-container-forms {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0px;
   padding: 0px;
 }
 

@@ -1,30 +1,31 @@
-"use strict"
+"use strict";
 
 const endpoint = "http://localhost:4000";
 
 window.addEventListener("load", start);
 
 function start() {
-    getArtists();
+  getArtists();
+  document.querySelector("#create-form").addEventListener("submit", createArtist);
 }
 
 async function getArtists() {
-    const artists = await fetchArtists();
-    showSelectedArtists(artists);
+  const artists = await fetchArtists();
+  showSelectedArtists(artists);
 }
 
 async function fetchArtists() {
-    const response = await fetch(`${endpoint}/artists`);
-    const data = await response.json();
-    return data;
+  const response = await fetch(`${endpoint}/artists`);
+  const data = await response.json();
+  return data;
 }
 
 function showSelectedArtists(artists) {
-    document.querySelector("#display-artists").innerHTML = "";
-    for (const artist of artists) {
-        
-        const html = /*html*/
-            `
+  document.querySelector("#display-artists").innerHTML = "";
+  for (const artist of artists) {
+    const html =
+      /*html*/
+      `
             <article class="grab-artists" align="center">
             <h3>${artist.name}</h3>
             <img src="${artist.image}" alt ="${artist.name}">
@@ -40,26 +41,30 @@ function showSelectedArtists(artists) {
             </p>
             </article>
             `;
-        document.querySelector("#display-artists").insertAdjacentHTML("beforeend", html);
+    document.querySelector("#display-artists").insertAdjacentHTML("beforeend", html);
 
-        document.querySelector("#display-artists article:last-child .button-update-artist").addEventListener("click", () => updateArtist(artist));
-        document.querySelector("#display-artists article:last-child .button-delete-artist").addEventListener("click", () => deleteArtist(artist.id));
-    }
+    document.querySelector("#display-artists article:last-child .button-update-artist").addEventListener("click", () => updateArtist(artist));
+    document.querySelector("#display-artists article:last-child .button-delete-artist").addEventListener("click", () => deleteArtist(artist.id));
+  }
 }
 
-function updateArtist() {
 
+
+//Create artist
+function createArtist(event) {
+    event.preventDefault();
+    console.log("Create user registrated");
 }
+
+//Edit artist - Comming soon
+function updateArtist() {}
 
 //Delete artist
 async function deleteArtist(id) {
-    const response = await fetch(`${endpoint}/artists/${id}`, {
-        method: "delete"
-    });
-    if (response.ok) {
-        getArtists();
-    }
-
-
-
+  const response = await fetch(`${endpoint}/artists/${id}`, {
+    method: "delete",
+  });
+  if (response.ok) {
+    getArtists();
+  }
 }
