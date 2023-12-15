@@ -1,6 +1,7 @@
 "use strict";
 
 const endpoint = "http://localhost:4100";
+const sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
 
 window.addEventListener("load", start);
 
@@ -22,6 +23,7 @@ async function fetchArtists() {
 
 function showSelectedArtists(artists) {
   document.querySelector("#display-artists").innerHTML = "";
+  artists.sort(sortArtistsValue);
   for (const artist of artists) {
     const html =
       /*html*/
@@ -47,8 +49,6 @@ function showSelectedArtists(artists) {
     document.querySelector("#display-artists article:last-child .button-delete-artist").addEventListener("click", () => deleteArtist(artist.id));
   }
 }
-
-
 
 //Create artist
 function createArtist(event) {
