@@ -1,7 +1,7 @@
 "use strict";
 
 const endpoint = "http://localhost:4100";
-const sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
+let sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
 let filterFavoriteValue = false;
 
 window.addEventListener("load", start);
@@ -9,6 +9,7 @@ window.addEventListener("load", start);
 function start() {
   getArtists();
   document.querySelector("#filter-options").addEventListener("change", setFilterValue);
+  document.querySelector("#sort-options").addEventListener("change", setSortValue);
   document.querySelector("#create-form").addEventListener("submit", createArtist);
 }
 
@@ -82,6 +83,21 @@ function setFilterValue(event) {
     getArtists();
   }
 }
+
+//Setteing sort value
+function setSortValue(event) { 
+  const value = event.target.value;
+  if (value === "a") {
+    sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
+    console.log(sortArtistsValue);
+    getArtists();
+  } else if (value === "z") {
+    sortArtistsValue = (a, b) => b.name.localeCompare(a.name);
+    console.log(sortArtistsValue);
+    getArtists();
+  }
+}
+
 
 
 //Create artist
