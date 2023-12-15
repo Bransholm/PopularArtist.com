@@ -2,12 +2,13 @@
 
 const endpoint = "http://localhost:4100";
 const sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
-const filterFavoriteValue = false;
+let filterFavoriteValue = false;
 
 window.addEventListener("load", start);
 
 function start() {
   getArtists();
+  document.querySelector("#filter-options").addEventListener("change", setFilterValue);
   document.querySelector("#create-form").addEventListener("submit", createArtist);
 }
 
@@ -67,6 +68,21 @@ function showSelectedArtists(artists) {
         .addEventListener("click", () => deleteArtist(artist.id));
     }
 }
+
+//Setteing filter value
+function setFilterValue(event) { 
+  const value = event.target.value;
+  if (value === "false") {
+    filterFavoriteValue = false;
+    console.log(filterFavoriteValue);
+    getArtists();
+  } else if (value === "true") {
+    filterFavoriteValue = true;
+    console.log(filterFavoriteValue);
+    getArtists();
+  }
+}
+
 
 //Create artist
 function createArtist(event) {
