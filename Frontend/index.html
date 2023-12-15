@@ -5,11 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
-    <title>PolarArtits.com</title>
+    <title>PopularArtists.com</title>
 </head>
 <body>
-    <header><h1>PopularArtits.com</h1></header>
+    <header><h1>PopularArtists.com</h1></header>
+    
     <main>
+    
+        <section id="filter-favorites">
+
+        <!-- Dropdown filter favorites-->
+        <label for="filter-options">Filter after favorit:</label>
+        <select id="filter-options">
+        <option value="true && false" selected>Show all artists</option>
+        <option value="true">Show only favorites</option>
+        </select>
+
+        <!-- Dropdown sort alphabetically -->
+        <label for="sort-options">Sort alphabetically:</label>
+        <select id="sort-options">
+        <option value="a-z" selected>A-Z</option>
+        <option value="z-a">Z-A</option>
+        </select>
+
+
+    </section>
         <section id="display-artists" class="grid-layout"></section>
 
         <section id="grid-layout-forms">
@@ -48,4 +68,3 @@
 <script src="app.js" type="module"></script>
 </body>
 </html>
-<a href=""></a>

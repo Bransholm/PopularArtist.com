@@ -1,6 +1,6 @@
 "use strict";
 
-const endpoint = "http://localhost:4000";
+const endpoint = "http://localhost:4100";
 
 window.addEventListener("load", start);
 
@@ -56,7 +56,7 @@ function createArtist(event) {
     console.log("Create user registrated");
 }
 
-//Edit artist - Comming soon
+//Update artist - Comming soon
 function updateArtist() {}
 
 //Delete artist
