@@ -28,7 +28,7 @@ function showSelectedArtists(artists) {
       `
             <article class="grab-artists" align="center">
             <h3>${artist.name}</h3>
-            <img src="${artist.image}" alt ="${artist.name}">
+            <img src="./images/${artist.image}" alt ="${artist.name}">
             <p>Birthdate: ${artist.birtgdate}</p>
             <p>Active since: ${artist.activeSince}</p>
             <p>Genres: ${artist.genres}</p>

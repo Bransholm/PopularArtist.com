@@ -7,7 +7,7 @@
     "genres": "Pop, R&B",
     "labels": "Jive Records, RCA Records",
     "website": "https://britneyspears.com/",
-    "image": "images/britney.jpg",
+    "image": "9.png",
     "shortDescription": "Britney Spears is an American singer, dancer, and actress who achieved worldwide fame as a pop icon in the late 1990s and early 2000s. She is known for her chart-topping hits, iconic music videos, and her impact on pop culture.",
     "favorite": true
   },
@@ -19,7 +19,7 @@
     "genres": "Pop, R&B, Rock",
     "labels": "Epic Records",
     "website": "https://www.michaeljackson.com/",
-    "image": "images/britney.jpg",
+    "image": "6.png",
     "shortDescription": "Michael Jackson, the 'King of Pop,' was an American singer, songwriter, and dancer. He is one of the most famous and influential entertainers in the world.",
     "favorite": false
   },
@@ -31,7 +31,7 @@
     "genres": "Pop, Dance, Electronica",
     "labels": "Sire Records",
     "website": "https://www.madonna.com/",
-    "image": "images/britney.jpg",
+    "image": "13.png",
     "shortDescription": "Madonna is an American singer, songwriter, and actress known for her reinventions in music and her immense impact on popular culture.",
     "favorite": false
   },
@@ -43,7 +43,7 @@
     "genres": "Pop, R&B",
     "labels": "Columbia Records, Parkwood Entertainment",
     "website": "https://www.beyonce.com/",
-    "image": "images/britney.jpg",
+    "image": "8.png",
     "shortDescription": "Beyoncé is an American singer, songwriter, and actress known for her powerful vocals and her impact on feminism and social issues through her music.",
     "favorite": false
   },
@@ -55,7 +55,7 @@
     "genres": "Pop, Soul",
     "labels": "XL Recordings, Columbia Records",
     "website": "https://www.adele.com/",
-    "image": "images/britney.jpg",
+    "image": "11.png",
     "shortDescription": "Adele is a British singer-songwriter known for her emotional and soulful ballads. She has won numerous awards for her powerful vocals.",
     "favorite": true
   },
@@ -67,7 +67,7 @@
     "genres": "Country, Pop",
     "labels": "Big Machine Records, Republic Records",
     "website": "https://www.taylorswift.com/",
-    "image": "images/britney.jpg",
+    "image": "1.png",
     "shortDescription": "Taylor Swift is an American singer-songwriter known for her narrative songwriting and successful transitions between country and pop music.",
     "favorite": true
   },
@@ -79,7 +79,7 @@
     "genres": "Pop, R&B",
     "labels": "RBMG, Def Jam Recordings",
     "website": "https://www.justinbiebermusic.com/",
-    "image": "images/britney.jpg",
+    "image": "3.png",
     "shortDescription": "Justin Bieber is a Canadian singer-songwriter known for his early success as a teen pop sensation and his continued influence in the music industry.",
     "favorite": false
   },
@@ -91,7 +91,7 @@
     "genres": "Pop, Dance, Electronic",
     "labels": "Interscope Records",
     "website": "https://www.ladygaga.com/",
-    "image": "images/britney.jpg",
+    "image": "12.png",
     "shortDescription": "Lady Gaga is an American singer, songwriter, and actress known for her distinctive style, theatrical performances, and chart-topping hits.",
     "favorite": true
   },
@@ -103,7 +103,7 @@
     "genres": "Hip-Hop, Rap",
     "labels": "Shady Records, Aftermath Entertainment, Interscope Records",
     "website": "https://www.eminem.com/",
-    "image": "images/britney.jpg",
+    "image": "5.png",
     "shortDescription": "Eminem is an American rapper, songwriter, and record producer known for his complex lyrics and his impact on the hip-hop genre.",
     "favorite": false
   },
@@ -115,7 +115,7 @@
     "genres": "Soul, R&B, Pop",
     "labels": "Motown, Tamla",
     "website": "https://www.steviewonder.net/",
-    "image": "images/britney.jpg",
+    "image": "15.png",
     "shortDescription": "Stevie Wonder is an American singer, songwriter, and multi-instrumentalist known for his timeless classics and contributions to music.",
     "favorite": false
   },
@@ -127,7 +127,7 @@
     "genres": "Rock, Pop, Experimental",
     "labels": "RCA Records, Columbia Records",
     "website": "https://www.davidbowie.com/",
-    "image": "images/britney.jpg",
+    "image": "10.png",
     "shortDescription": "David Bowie was an English singer, songwriter, and actor known for his innovative music and influential contributions to rock and pop culture.",
     "favorite": false
   },
@@ -139,7 +139,7 @@
     "genres": "Progressive Rock, Psychedelic Rock",
     "labels": "EMI, Harvest, Columbia",
     "website": "https://www.pinkfloyd.com/",
-    "image": "images/britney.jpg",
+    "image": "16.png",
     "shortDescription": "Pink Floyd was a British rock band known for their concept albums and influential contributions to the progressive rock genre.",
     "favorite": false
   },
@@ -151,7 +151,7 @@
     "genres": "Hip-Hop, Rap",
     "labels": "Roc Nation, Def Jam Recordings",
     "website": "https://www.jay-z.com/",
-    "image": "images/britney.jpg",
+    "image": "14.png",
     "shortDescription": "Jay-Z is an American rapper, songwriter, and entrepreneur known for his successful music career and business ventures.",
     "favorite": false
   },
@@ -163,7 +163,7 @@
     "genres": "Rock, Pop, R&B",
     "labels": "Parlophone, Capitol Records",
     "website": "https://www.tinaturnerofficial.com/",
-    "image": "images/britney.jpg",
+    "image": "2.png",
     "shortDescription": "Tina Turner is an American-born Swiss singer, actress, and dancer known for her powerful voice and iconic performances.",
     "favorite": false
   },
@@ -175,7 +175,7 @@
     "genres": "Folk, Rock",
     "labels": "Columbia Records",
     "website": "https://www.bobdylan.com/",
-    "image": "images/britney.jpg",
+    "image": "4.png",
     "shortDescription": "Bob Dylan is an American singer-songwriter known for his poetic lyrics and influential contributions to folk and rock music.",
     "favorite": true
   },
@@ -187,7 +187,7 @@
     "genres": "Jazz, Swing, Pop",
     "labels": "Columbia Records, Capitol Records, Reprise Records",
     "website": "https://www.sinatra.com/",
-    "image": "images/britney.jpg",
+    "image": "7.png",
     "shortDescription": "Frank Sinatra, 'Ol' Blue Eyes,' was an American singer and actor known for his timeless classics and contributions to the music and film industry.",
     "favorite": false
   }
