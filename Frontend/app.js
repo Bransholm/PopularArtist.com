@@ -2,6 +2,7 @@
 
 const endpoint = "http://localhost:4100";
 const sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
+const filterFavoriteValue = ""
 
 window.addEventListener("load", start);
 
@@ -24,7 +25,8 @@ async function fetchArtists() {
 function showSelectedArtists(artists) {
   document.querySelector("#display-artists").innerHTML = "";
   artists.sort(sortArtistsValue);
-  for (const artist of artists) {
+  const filterFavorites = artists.filter((artist) => artist.favorite === true);
+  for (const artist of filterFavorites) {
     const html =
       /*html*/
       `
@@ -43,10 +45,20 @@ function showSelectedArtists(artists) {
             </p>
             </article>
             `;
-    document.querySelector("#display-artists").insertAdjacentHTML("beforeend", html);
+    document
+      .querySelector("#display-artists")
+      .insertAdjacentHTML("beforeend", html);
 
-    document.querySelector("#display-artists article:last-child .button-update-artist").addEventListener("click", () => updateArtist(artist));
-    document.querySelector("#display-artists article:last-child .button-delete-artist").addEventListener("click", () => deleteArtist(artist.id));
+    document
+      .querySelector(
+        "#display-artists article:last-child .button-update-artist"
+      )
+      .addEventListener("click", () => updateArtist(artist));
+    document
+      .querySelector(
+        "#display-artists article:last-child .button-delete-artist"
+      )
+      .addEventListener("click", () => deleteArtist(artist.id));
   }
 }
 
