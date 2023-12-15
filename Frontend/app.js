@@ -57,16 +57,8 @@ function showSelectedArtists(artists) {
         .querySelector("#display-artists")
         .insertAdjacentHTML("beforeend", html);
 
-      document
-        .querySelector(
-          "#display-artists article:last-child .button-update-artist"
-        )
-        .addEventListener("click", () => updateArtist(artist));
-      document
-        .querySelector(
-          "#display-artists article:last-child .button-delete-artist"
-        )
-        .addEventListener("click", () => deleteArtist(artist.id));
+      document.querySelector("#display-artists article:last-child .button-update-artist").addEventListener("click", () => updateArtist(artist));
+      document.querySelector("#display-artists article:last-child .button-delete-artist").addEventListener("click", () => deleteArtist(artist.id));
     }
 }
 
