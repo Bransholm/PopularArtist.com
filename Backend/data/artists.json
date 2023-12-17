@@ -190,5 +190,17 @@
     "image": "7.png",
     "shortDescription": "Frank Sinatra, 'Ol' Blue Eyes,' was an American singer and actor known for his timeless classics and contributions to the music and film industry.",
     "favorite": false
+  },
+  {
+    "id": 1702854162653,
+    "name": "Test M0002",
+    "birthdate": "1969-12-04",
+    "activeSince": "1986",
+    "genres": "Hip-Hop, Rap",
+    "labels": "Roc Nation, Def Jam Recordings",
+    "website": "https://www.jay-z.com/",
+    "image": "14.png",
+    "shortDescription": "Jay-Z is an American rapper, songwriter, and entrepreneur known for his successful music career and business ventures.",
+    "favorite": false
   }
 ]

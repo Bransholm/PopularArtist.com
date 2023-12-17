@@ -1,6 +1,7 @@
 import express from "express";
 import cors from "cors";
 import fs from "fs/promises";
+import { request } from "http";
 
 const app = express();
 const port = 4100;
@@ -40,13 +41,14 @@ app.post("/artists", async (request, response) => {
     website: request.body.website,
     image: request.body.image,
     shortDescription: request.body.shortDescription,
+    favorite: request.body.favorite,
   };
 
   const data = await fs.readFile("data/artists.json");
-  const artists = JSON.parse(data);
+  const artists = await JSON.parse(data);
   artists.push(newArtist);
   console.log(artists);
-  fs.writeFile("data/artists.json", JSON.stringify(artists));
+  fs.writeFile("data/artists.json", JSON.stringify(artists, null, 2));
   response.json(artists);
 });
 
