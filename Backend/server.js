@@ -72,8 +72,10 @@ app.put("/artists/:id", async (request, response) => {
   result.website = artist.website;
   result.image = artist.image;
   result.shortDescription = artist.shortDescription;
+  result.favorite = artist.favorite;
+  
 
-  fs.writeFile("data/artists.json", JSON.stringify(artists));
+  fs.writeFile("data/artists.json", JSON.stringify(artists, null, 2));
 
   console.log(request.body);
   response.json(artists);
