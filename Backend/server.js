@@ -93,7 +93,7 @@ app.delete("/artists/:id", async (request, response) => {
   console.log(removeArtist);
   artists.splice(removeArtist, 1);
   console.log(artists);
-  fs.writeFile("data/artists.json", JSON.stringify(artists));
+  fs.writeFile("data/artists.json", JSON.stringify(artists, null, 2));
   response.json(artists);
 });
 
