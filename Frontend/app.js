@@ -53,9 +53,7 @@ function showSelectedArtists(artists) {
             </p>
             </article>
             `;
-      document
-        .querySelector("#display-artists")
-        .insertAdjacentHTML("beforeend", html);
+      document.querySelector("#display-artists").insertAdjacentHTML("beforeend", html);
 
       document.querySelector("#display-artists article:last-child .button-update-artist").addEventListener("click", () => updateArtist(artist));
       document.querySelector("#display-artists article:last-child .button-delete-artist").addEventListener("click", () => deleteArtist(artist.id));
@@ -95,7 +93,7 @@ function setSortValue(event) {
 //Create artist
 function createArtist(event) {
     event.preventDefault();
-    console.log("Create user registrated");
+    console.log("Create user registreted");
 }
 
 //Update artist - Comming soon
