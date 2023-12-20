@@ -9,7 +9,7 @@
     "website": "https://britneyspears.com/",
     "image": "9.png",
     "shortDescription": "Britney Spears is an American singer, dancer, and actress who achieved worldwide fame as a pop icon in the late 1990s and early 2000s. She is known for her chart-topping hits, iconic music videos, and her impact on pop culture.",
-    "favorite": true
+    "favorite": "true"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "website": "https://www.michaeljackson.com/",
     "image": "6.png",
     "shortDescription": "Michael Jackson, the 'King of Pop,' was an American singer, songwriter, and dancer. He is one of the most famous and influential entertainers in the world.",
-    "favorite": false
+    "favorite": "false"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "website": "https://www.madonna.com/",
     "image": "13.png",
     "shortDescription": "Madonna is an American singer, songwriter, and actress known for her reinventions in music and her immense impact on popular culture.",
-    "favorite": false
+    "favorite": "false"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "website": "https://www.beyonce.com/",
     "image": "8.png",
     "shortDescription": "Beyoncé is an American singer, songwriter, and actress known for her powerful vocals and her impact on feminism and social issues through her music.",
-    "favorite": false
+    "favorite": "false"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "website": "https://www.adele.com/",
     "image": "11.png",
     "shortDescription": "Adele is a British singer-songwriter known for her emotional and soulful ballads. She has won numerous awards for her powerful vocals.",
-    "favorite": true
+    "favorite": "true"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "website": "https://www.taylorswift.com/",
     "image": "1.png",
     "shortDescription": "Taylor Swift is an American singer-songwriter known for her narrative songwriting and successful transitions between country and pop music.",
-    "favorite": true
+    "favorite": "true"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "website": "https://www.justinbiebermusic.com/",
     "image": "3.png",
     "shortDescription": "Justin Bieber is a Canadian singer-songwriter known for his early success as a teen pop sensation and his continued influence in the music industry.",
-    "favorite": false
+    "favorite": "false"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "website": "https://www.ladygaga.com/",
     "image": "12.png",
     "shortDescription": "Lady Gaga is an American singer, songwriter, and actress known for her distinctive style, theatrical performances, and chart-topping hits.",
-    "favorite": true
+    "favorite": "true"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "website": "https://www.eminem.com/",
     "image": "5.png",
     "shortDescription": "Eminem is an American rapper, songwriter, and record producer known for his complex lyrics and his impact on the hip-hop genre.",
-    "favorite": false
+    "favorite": "false"
   },
   {
     "id": 10,
@@ -117,7 +117,7 @@
     "website": "https://www.steviewonder.net/",
     "image": "15.png",
     "shortDescription": "Stevie Wonder is an American singer, songwriter, and multi-instrumentalist known for his timeless classics and contributions to music.",
-    "favorite": false
+    "favorite": "false"
   },
   {
     "id": 11,
@@ -129,7 +129,7 @@
     "website": "https://www.davidbowie.com/",
     "image": "10.png",
     "shortDescription": "David Bowie was an English singer, songwriter, and actor known for his innovative music and influential contributions to rock and pop culture.",
-    "favorite": false
+    "favorite": "false"
   },
   {
     "id": 12,
@@ -141,7 +141,7 @@
     "website": "https://www.pinkfloyd.com/",
     "image": "16.png",
     "shortDescription": "Pink Floyd was a British rock band known for their concept albums and influential contributions to the progressive rock genre.",
-    "favorite": false
+    "favorite": "false"
   },
   {
     "id": 13,
@@ -153,7 +153,7 @@
     "website": "https://www.jay-z.com/",
     "image": "14.png",
     "shortDescription": "Jay-Z is an American rapper, songwriter, and entrepreneur known for his successful music career and business ventures.",
-    "favorite": false
+    "favorite": "false"
   },
   {
     "id": 14,
@@ -165,7 +165,7 @@
     "website": "https://www.tinaturnerofficial.com/",
     "image": "2.png",
     "shortDescription": "Tina Turner is an American-born Swiss singer, actress, and dancer known for her powerful voice and iconic performances.",
-    "favorite": false
+    "favorite": "false"
   },
   {
     "id": 15,
@@ -177,7 +177,7 @@
     "website": "https://www.bobdylan.com/",
     "image": "4.png",
     "shortDescription": "Bob Dylan is an American singer-songwriter known for his poetic lyrics and influential contributions to folk and rock music.",
-    "favorite": true
+    "favorite": "true"
   },
   {
     "id": 16,
@@ -189,18 +189,6 @@
     "website": "https://www.sinatra.com/",
     "image": "7.png",
     "shortDescription": "Frank Sinatra, 'Ol' Blue Eyes,' was an American singer and actor known for his timeless classics and contributions to the music and film industry.",
-    "favorite": false
-  },
-  {
-    "id": 1702854853063,
-    "name": "Test M0015",
-    "birthdate": "1969-12-04",
-    "activeSince": "1986",
-    "genres": "Hip-Hop, Rap",
-    "labels": "Roc Nation, Def Jam Recordings",
-    "website": "https://www.jay-z.com/",
-    "image": "14.png",
-    "shortDescription": "Jay-Z is an American rapper, songwriter, and entrepreneur known for his successful music career and business ventures.",
-    "favorite": false
+    "favorite": "false"
   }
 ]

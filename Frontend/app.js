@@ -2,7 +2,7 @@
 
 const endpoint = "http://localhost:4100";
 let sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
-let filterFavoriteValue = false;
+let filterFavoriteValue = "false";
 
 window.addEventListener("load", start);
 
@@ -28,10 +28,10 @@ function showSelectedArtists(artists) {
   document.querySelector("#display-artists").innerHTML = "";
   artists.sort(sortArtistsValue);
   let filterFavorites;
-  if (filterFavoriteValue === false) {
-  filterFavorites = artists.filter((artist) => artist.favorite === false || artist.favorite === true);    
-  } else if (filterFavoriteValue === true) {
-    filterFavorites = artists.filter((artist) => artist.favorite === true);
+  if (filterFavoriteValue === "false") {
+  filterFavorites = artists.filter((artist) => artist.favorite === "false" || artist.favorite === "true");    
+  } else if (filterFavoriteValue === "true") {
+    filterFavorites = artists.filter((artist) => artist.favorite === "true");
   }
     
     for (const artist of filterFavorites) {
@@ -64,11 +64,11 @@ function showSelectedArtists(artists) {
 function setFilterValue(event) { 
   const value = event.target.value;
   if (value === "false") {
-    filterFavoriteValue = false;
+    filterFavoriteValue = "false";
     console.log(filterFavoriteValue);
     getArtists();
   } else if (value === "true") {
-    filterFavoriteValue = true;
+    filterFavoriteValue = "true";
     console.log(filterFavoriteValue);
     getArtists();
   }
@@ -91,9 +91,35 @@ function setSortValue(event) {
 
 
 //Create artist
-function createArtist(event) {
-    event.preventDefault();
-    console.log("Create user registreted");
+async function createArtist(event) {
+  event.preventDefault();
+  const name = event.target.name.value;
+  const birthdate = event.target.birthdate.value;
+  const activeSince = event.target.activeSince.value;
+  const genres = event.target.genres.value;
+  const labels = event.target.labels.value;
+  const website = event.target.website.value;
+  const image = event.target.image.value;
+  const shortDescription = event.target.shortDescription.value;
+  const favorite = event.target.favorite.value;
+
+  // create a new user
+  const newArtist = { name, birthdate, activeSince, genres, labels, website, image, shortDescription, favorite };
+  const artistAsJson = JSON.stringify(newArtist);
+  const response = await fetch(`${endpoint}/artists`, {
+    method: "POST",
+    body: artistAsJson,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  if (response.ok) {
+    // if success, update the users grid
+    getArtists();
+    // and scroll to top
+    moveBrowserToTheTopOfThePage();
+  }
 }
 
 //Update artist - Comming soon
@@ -106,5 +132,10 @@ async function deleteArtist(id) {
   });
   if (response.ok) {
     getArtists();
+    moveBrowserToTheTopOfThePage();
   }
+}
+
+function moveBrowserToTheTopOfThePage() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
