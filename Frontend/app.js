@@ -3,6 +3,7 @@
 const endpoint = "http://localhost:4100";
 let sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
 let filterFavoriteValue = "false";
+let artistToUpdate;
 
 window.addEventListener("load", start);
 
@@ -10,6 +11,7 @@ function start() {
   getArtists();
   document.querySelector("#filter-options").addEventListener("change", setFilterValue);
   document.querySelector("#sort-options").addEventListener("change", setSortValue);
+  document.querySelector("#update-form").addEventListener("submit", updateArtist);
   document.querySelector("#create-form").addEventListener("submit", createArtist);
 }
 
@@ -55,7 +57,7 @@ function showSelectedArtists(artists) {
             `;
       document.querySelector("#display-artists").insertAdjacentHTML("beforeend", html);
 
-      document.querySelector("#display-artists article:last-child .button-update-artist").addEventListener("click", () => updateArtist(artist));
+      document.querySelector("#display-artists article:last-child .button-update-artist").addEventListener("click", () => getArtistToUpdate(artist));
       document.querySelector("#display-artists article:last-child .button-delete-artist").addEventListener("click", () => deleteArtist(artist.id));
     }
 }
@@ -88,8 +90,6 @@ function setSortValue(event) {
   }
 }
 
-
-
 //Create artist
 async function createArtist(event) {
   event.preventDefault();
@@ -103,7 +103,7 @@ async function createArtist(event) {
   const shortDescription = event.target.shortDescription.value;
   const favorite = event.target.favorite.value;
 
-  // create a new user
+  // create a new artist
   const newArtist = { name, birthdate, activeSince, genres, labels, website, image, shortDescription, favorite };
   const artistAsJson = JSON.stringify(newArtist);
   const response = await fetch(`${endpoint}/artists`, {
@@ -115,15 +115,30 @@ async function createArtist(event) {
   });
 
   if (response.ok) {
-    // if success, update the users grid
     getArtists();
-    // and scroll to top
     moveBrowserToTheTopOfThePage();
   }
 }
 
+//Select and show the artist to update
+function getArtistToUpdate(artist) {
+  artistToUpdate = artist;
+  const form = document.querySelector("#update-form");
+  form.name.value = artist.name;
+  form.birthdate.value = artist.birthdate;
+  form.activeSince.value = artist.activeSince;
+  form.genres.value = artist.genres;
+  form.labels.value = artist.labels;
+  form.website.value = artist.website;
+  form.image.value = artist.image;
+  form.shortDescription.value = artist.shortDescription;
+  form.favorite.value = artist.favorite;
+  form.scrollIntoView({ behavior: "auto" });
+}
+
 //Update artist - Comming soon
-function updateArtist() {}
+function updateArtist() { };
+
 
 //Delete artist
 async function deleteArtist(id) {
@@ -137,5 +152,5 @@ async function deleteArtist(id) {
 }
 
 function moveBrowserToTheTopOfThePage() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+  window.scrollTo({ top: 0, behavior: "auto" });
 }
