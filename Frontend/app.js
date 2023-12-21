@@ -1,9 +1,14 @@
 "use strict";
 
+import {
+  sortArtistsValue,
+  filterFavoriteValue,
+  setFilterValue,
+  setSortValue,
+} from "./filter_sort.js";
+
 //The global variables used for the project
 const endpoint = "http://localhost:4100";
-let sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
-let filterFavoriteValue = "false";
 let artistToUpdate;
 
 window.addEventListener("load", start);
@@ -11,10 +16,18 @@ window.addEventListener("load", start);
 //Start function that controls the call stack
 function start() {
   getArtists();
-  document.querySelector("#filter-options").addEventListener("change", setFilterValue);
-  document.querySelector("#sort-options").addEventListener("change", setSortValue);
-  document.querySelector("#update-form").addEventListener("submit", updateArtist);
-  document.querySelector("#create-form").addEventListener("submit", createArtist);
+  document
+    .querySelector("#filter-options")
+    .addEventListener("change", setFilterValue);
+  document
+    .querySelector("#sort-options")
+    .addEventListener("change", setSortValue);
+  document
+    .querySelector("#update-form")
+    .addEventListener("submit", updateArtist);
+  document
+    .querySelector("#create-form")
+    .addEventListener("submit", createArtist);
 }
 
 //Get artist data
@@ -30,21 +43,23 @@ async function fetchArtists() {
   return data;
 }
 
-//Show the artissts to the page - DOM manipulation includeing the filter and sort 
+//Show the artissts to the page - DOM manipulation includeing the filter and sort
 function showSelectedArtists(artists) {
   document.querySelector("#display-artists").innerHTML = "";
   artists.sort(sortArtistsValue);
   let filterFavorites;
   if (filterFavoriteValue === "false") {
-  filterFavorites = artists.filter((artist) => artist.favorite === "false" || artist.favorite === "true");    
+    filterFavorites = artists.filter(
+      (artist) => artist.favorite === "false" || artist.favorite === "true"
+    );
   } else if (filterFavoriteValue === "true") {
     filterFavorites = artists.filter((artist) => artist.favorite === "true");
   }
-    
-    for (const artist of filterFavorites) {
-      const html =
-        /*html*/
-        `
+
+  for (const artist of filterFavorites) {
+    const html =
+      /*html*/
+      `
             <article class="grab-artists" align="center">
             <h3>${artist.name}</h3>
             <img src="./images/${artist.image}" alt ="${artist.name}">
@@ -60,38 +75,20 @@ function showSelectedArtists(artists) {
             </p>
             </article>
             `;
-      document.querySelector("#display-artists").insertAdjacentHTML("beforeend", html);
+    document
+      .querySelector("#display-artists")
+      .insertAdjacentHTML("beforeend", html);
 
-      document.querySelector("#display-artists article:last-child .button-update-artist").addEventListener("click", () => getArtistToUpdate(artist));
-      document.querySelector("#display-artists article:last-child .button-delete-artist").addEventListener("click", () => deleteArtist(artist.id));
-    }
-}
-
-//Setteing filter value
-function setFilterValue(event) { 
-  const value = event.target.value;
-  if (value === "false") {
-    filterFavoriteValue = "false";
-    console.log(filterFavoriteValue);
-    getArtists();
-  } else if (value === "true") {
-    filterFavoriteValue = "true";
-    console.log(filterFavoriteValue);
-    getArtists();
-  }
-}
-
-//Setteing sort value
-function setSortValue(event) { 
-  const value = event.target.value;
-  if (value === "a") {
-    sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
-    console.log(sortArtistsValue);
-    getArtists();
-  } else if (value === "z") {
-    sortArtistsValue = (a, b) => b.name.localeCompare(a.name);
-    console.log(sortArtistsValue);
-    getArtists();
+    document
+      .querySelector(
+        "#display-artists article:last-child .button-update-artist"
+      )
+      .addEventListener("click", () => getArtistToUpdate(artist));
+    document
+      .querySelector(
+        "#display-artists article:last-child .button-delete-artist"
+      )
+      .addEventListener("click", () => deleteArtist(artist.id));
   }
 }
 
@@ -109,7 +106,17 @@ async function createArtist(event) {
   const favorite = event.target.favorite.value;
 
   //The new artist object to create
-  const newArtist = { name, birthdate, activeSince, genres, labels, website, image, shortDescription, favorite };
+  const newArtist = {
+    name,
+    birthdate,
+    activeSince,
+    genres,
+    labels,
+    website,
+    image,
+    shortDescription,
+    favorite,
+  };
   const artistAsJson = JSON.stringify(newArtist);
   const response = await fetch(`${endpoint}/artists`, {
     method: "POST",
@@ -153,9 +160,19 @@ async function updateArtist(event) {
   const image = event.target.image.value;
   const shortDescription = event.target.shortDescription.value;
   const favorite = event.target.favorite.value;
-  
+
   //The choosen artist to update
-  const artistToBeUpdated = { name, birthdate, activeSince, genres, labels, website, image, shortDescription, favorite };
+  const artistToBeUpdated = {
+    name,
+    birthdate,
+    activeSince,
+    genres,
+    labels,
+    website,
+    image,
+    shortDescription,
+    favorite,
+  };
   const artistAsJson = JSON.stringify(artistToBeUpdated);
   const response = await fetch(`${endpoint}/artists/${artistToUpdate.id}`, {
     method: "PUT",
@@ -185,3 +202,5 @@ async function deleteArtist(id) {
 function moveBrowserToTheTopOfThePage() {
   window.scrollTo({ top: 0, behavior: "auto" });
 }
+
+export { getArtists };
