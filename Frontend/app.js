@@ -1,5 +1,6 @@
 "use strict";
 
+//The global variables used for the project
 const endpoint = "http://localhost:4100";
 let sortArtistsValue = (a, b) => a.name.localeCompare(b.name);
 let filterFavoriteValue = "false";
@@ -7,6 +8,7 @@ let artistToUpdate;
 
 window.addEventListener("load", start);
 
+//Start function that controls the call stack
 function start() {
   getArtists();
   document.querySelector("#filter-options").addEventListener("change", setFilterValue);
@@ -15,17 +17,20 @@ function start() {
   document.querySelector("#create-form").addEventListener("submit", createArtist);
 }
 
+//Get artist data
 async function getArtists() {
   const artists = await fetchArtists();
   showSelectedArtists(artists);
 }
 
+//The artist data transaction
 async function fetchArtists() {
   const response = await fetch(`${endpoint}/artists`);
   const data = await response.json();
   return data;
 }
 
+//Show the artissts to the page - DOM manipulation includeing the filter and sort 
 function showSelectedArtists(artists) {
   document.querySelector("#display-artists").innerHTML = "";
   artists.sort(sortArtistsValue);
@@ -103,7 +108,7 @@ async function createArtist(event) {
   const shortDescription = event.target.shortDescription.value;
   const favorite = event.target.favorite.value;
 
-  // create a new artist
+  //The new artist object to create
   const newArtist = { name, birthdate, activeSince, genres, labels, website, image, shortDescription, favorite };
   const artistAsJson = JSON.stringify(newArtist);
   const response = await fetch(`${endpoint}/artists`, {
@@ -149,7 +154,7 @@ async function updateArtist(event) {
   const shortDescription = event.target.shortDescription.value;
   const favorite = event.target.favorite.value;
   
-  // update artist
+  //The choosen artist to update
   const artistToBeUpdated = { name, birthdate, activeSince, genres, labels, website, image, shortDescription, favorite };
   const artistAsJson = JSON.stringify(artistToBeUpdated);
   const response = await fetch(`${endpoint}/artists/${artistToUpdate.id}`, {
@@ -176,6 +181,7 @@ async function deleteArtist(id) {
   }
 }
 
+//This function move the browser to the top. Used after createing or updating an artist
 function moveBrowserToTheTopOfThePage() {
   window.scrollTo({ top: 0, behavior: "auto" });
 }
