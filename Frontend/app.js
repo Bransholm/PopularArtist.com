@@ -136,9 +136,34 @@ function getArtistToUpdate(artist) {
   form.scrollIntoView({ behavior: "auto" });
 }
 
-//Update artist - Comming soon
-function updateArtist() { };
-
+//Update artist
+async function updateArtist(event) {
+  event.preventDefault();
+  const name = event.target.name.value;
+  const birthdate = event.target.birthdate.value;
+  const activeSince = event.target.activeSince.value;
+  const genres = event.target.genres.value;
+  const labels = event.target.labels.value;
+  const website = event.target.website.value;
+  const image = event.target.image.value;
+  const shortDescription = event.target.shortDescription.value;
+  const favorite = event.target.favorite.value;
+  
+  // update artist
+  const artistToBeUpdated = { name, birthdate, activeSince, genres, labels, website, image, shortDescription, favorite };
+  const artistAsJson = JSON.stringify(artistToBeUpdated);
+  const response = await fetch(`${endpoint}/artists/${artistToUpdate.id}`, {
+    method: "PUT",
+    body: artistAsJson,
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  if (response.ok) {
+    getArtists();
+    scrollToTop();
+  }
+}
 
 //Delete artist
 async function deleteArtist(id) {
